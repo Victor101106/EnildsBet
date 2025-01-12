@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:width="55.5sp"
+        android:height="55.5sp" >
+        <shape android:shape="rectangle">
+            <solid android:color="@color/dark_red" />
+            <corners android:radius="8sp" />
+        </shape>
+    </item>
+    <item
+        android:drawable="@drawable/image_fluminense"
+        android:gravity="center"
+        android:height="35sp"
+        android:width="30sp" />
+</layer-list>

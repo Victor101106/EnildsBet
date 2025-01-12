@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/main_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/bebas_neue"
+        android:text="@string/main_title"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/main_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter"
+        android:text="@string/main_subtitle"
+        android:textAlignment="center"
+        android:textColor="@color/gray100"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_title" />
+
+    <EditText
+        android:id="@+id/main_name_input"
+        style="@style/input_field"
+        android:layout_width="315sp"
+        android:layout_height="60sp"
+        android:layout_marginBottom="14dp"
+        android:drawableStart="@drawable/icon_person"
+        android:ems="10"
+        android:hint="@string/main_name_input_hint"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/main_balance_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/main_balance_input"
+        style="@style/input_field"
+        android:layout_width="315sp"
+        android:layout_height="60sp"
+        android:layout_marginBottom="40dp"
+        android:drawableStart="@drawable/icon_dollar_circle"
+        android:ems="10"
+        android:hint="@string/main_balance_input_hint"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/main_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/main_button"
+        android:layout_width="315sp"
+        android:layout_height="60sp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/main_button_text"
+        android:background="@drawable/rounded_green_button_background"
+        android:fontFamily="@font/inter"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/main_terms"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/main_terms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:text="@string/main_terms_text"
+        android:textAlignment="center"
+        android:textColor="@color/gray200"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/main_image"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:contentDescription="@string/main_image_description"
+        app:layout_constraintBottom_toTopOf="@+id/main_name_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/image_enildo_with_serie_c_champion" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

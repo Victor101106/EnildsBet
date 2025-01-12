@@ -1,0 +1,53 @@
+<resources>
+
+    <string name="app_name">Enild\'s Bet</string>
+
+    <string name="zero_real_currency_text">R$ 0.0</string>
+
+    <string name="main_title">
+        <font color="#000000">Aposte na</font>
+        <font color="#3FDD87">Enild\'s Bet</font>
+    </string>
+
+    <string name="main_subtitle">Venha apostar na melhor casa\nde aposta de porto franco!</string>
+    <string name="main_terms_text">Ao clicar você concorda com nossos\ntermos de condições inexistente.</string>
+    <string name="main_image_description">Enildo de terno campeão da Série C 1999</string>
+
+    <string name="main_name_input_hint">Digite seu nome</string>
+    <string name="main_balance_input_hint">Digite seu saldo</string>
+    <string name="main_button_text">Comece a apostar</string>
+
+    <string name="main_input_error_dialog_message">O nome precisa conter no mínimo três caracteres e o saldo deve ser maior que zero!</string>
+    <string name="main_input_error_dialog_title">Informações inválidas!</string>
+    <string name="main_input_error_dialog_button_text">Tentar novamente</string>
+
+    <string name="bet_input_error_dialog_message">A aposta precisar conter no mínimo uma mina e no máximo vinte e quatro minas, além disso o valor da aposta deve ser maior que zero e menor ou igual ao seu saldo!</string>
+    <string name="bet_input_error_dialog_title">Aposta inválida!</string>
+    <string name="bet_input_error_dialog_button_text">Tentar novamente</string>
+
+    <string name="bet_greetings_text">Olá, %s!</string>
+    <string name="bet_balance_text">@string/zero_real_currency_text</string>
+    <string name="bet_positive_cash_flow_text">+ %s</string>
+    <string name="bet_negative_cash_flow_text">- %s</string>
+    <string name="bet_value_gained_text">Ganhando %s!</string>
+    <string name="bet_brazino_ad_description">Anúncio patrocinado da Brazino 777</string>
+
+    <string name="bet_value_input_hint">Valor da aposta</string>
+    <string name="bet_mine_count_input_hint">Número de minas</string>
+
+    <string name="bet_image_joao_carlos_description">João Carlos</string>
+    <string name="bet_image_joabe_description">Joabe</string>
+
+    <string name="transfer_back_text">Voltar</string>
+    <string name="transfer_balance_text">@string/zero_real_currency_text</string>
+
+    <string name="transfer_title">Qual é o valor da\ntransferência?</string>
+    <string name="transfer_subtitle">Transfira dinheiro para a sua\ncasa de aposta favorita!</string>
+
+    <string name="transfer_value_input_hint">Digite o valor</string>
+
+    <string name="transfer_input_error_dialog_message">A transferência deve conter o minímo de um real!</string>
+    <string name="transfer_input_error_dialog_title">Transferência inválida!</string>
+    <string name="transfer_input_error_dialog_button_text">Tentar novamente</string>
+
+</resources>

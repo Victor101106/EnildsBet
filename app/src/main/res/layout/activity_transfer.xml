@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_background"
+    tools:context=".TransferActivity">
+
+    <TextView
+        android:id="@+id/transfer_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:drawablePadding="8sp"
+        android:fontFamily="@font/inter"
+        android:text="@string/transfer_back_text"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:drawableStartCompat="@drawable/icon_arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/transfer_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/inter"
+        android:text="@string/transfer_balance_text"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/transfer_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/transfer_back" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="315sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/transfer_back">
+
+        <TextView
+            android:id="@+id/transfer_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
+            android:text="@string/transfer_title"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            android:lineHeight="34sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/transfer_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
+            android:layout_marginTop="5sp"
+            android:text="@string/transfer_subtitle"
+            android:textColor="@color/gray100"
+            android:lineHeight="20sp"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/transfer_title"
+            app:layout_constraintTop_toBottomOf="@+id/transfer_title" />
+
+        <EditText
+            android:id="@+id/transfer_value_input"
+            style="@style/input_field"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_marginTop="34sp"
+            android:autofillHints="numberSigned"
+            android:drawableStart="@drawable/icon_dollar_circle"
+            android:ems="10"
+            android:hint="@string/transfer_value_input_hint"
+            android:inputType="numberSigned"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/transfer_subtitle" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/transfer_forward_button"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:layout_marginBottom="30sp"
+        android:layout_marginRight="30sp"
+        android:background="@drawable/rounded_green_button_background"
+        android:drawableLeft="@drawable/icon_arrow_forward"
+        android:paddingStart="18sp"
+        android:paddingEnd="0sp"
+        android:textColor="@color/black"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

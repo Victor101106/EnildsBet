@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_background"
+    tools:context=".BetActivity">
+
+    <ImageView
+        android:id="@+id/bet_image_joao_carlos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-60dp"
+        android:contentDescription="@string/bet_image_joao_carlos_description"
+        app:layout_constraintBottom_toTopOf="@+id/bet_value_input"
+        app:layout_constraintStart_toStartOf="@+id/bet_value_input"
+        app:srcCompat="@drawable/image_joao_carlos" />
+
+    <TextView
+        android:id="@+id/bet_greetings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/inter"
+        android:text="@string/bet_greetings_text"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bet_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/inter"
+        android:text="@string/bet_balance_text"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:drawableStartCompat="@drawable/icon_arrow_left"
+        app:layout_constraintBottom_toBottomOf="@+id/bet_greetings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bet_greetings" />
+
+    <ImageView
+        android:id="@+id/bet_brazino_ad"
+        android:layout_width="match_parent"
+        android:layout_height="119dp"
+        android:contentDescription="@string/bet_brazino_ad_description"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/image_brazino_ad" />
+
+    <ImageView
+        android:id="@+id/bet_imagem_joabe"
+        android:layout_width="81dp"
+        android:layout_height="98dp"
+        android:layout_marginBottom="-22dp"
+        android:contentDescription="@string/bet_image_joabe_description"
+        app:layout_constraintBottom_toTopOf="@+id/bet_brazino_ad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/image_joabe" />
+
+    <EditText
+        android:id="@+id/bet_value_input"
+        style="@style/input_field"
+        android:layout_width="315sp"
+        android:layout_height="60sp"
+        android:layout_marginBottom="10dp"
+        android:autofillHints="numberDecimal"
+        android:drawableStart="@drawable/icon_dollar_circle"
+        android:ems="10"
+        android:hint="@string/bet_value_input_hint"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/bet_mine_count_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bet_play_stop_button"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:background="@drawable/rounded_green_button_background"
+        android:drawableLeft="@drawable/icon_play"
+        android:textColor="@color/black"
+        android:paddingStart="18sp"
+        android:paddingEnd="0sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/bet_mine_count_input"
+        app:layout_constraintEnd_toEndOf="@+id/bet_value_input"
+        app:layout_constraintTop_toTopOf="@+id/bet_mine_count_input" />
+
+    <EditText
+        android:id="@+id/bet_mine_count_input"
+        style="@style/input_field"
+        android:layout_width="245sp"
+        android:layout_height="60sp"
+        android:layout_marginBottom="30dp"
+        android:autofillHints="numberSigned"
+        android:drawableStart="@drawable/icon_close_circle"
+        android:ems="10"
+        android:hint="@string/bet_mine_count_input_hint"
+        android:inputType="numberSigned"
+        app:layout_constraintBottom_toTopOf="@+id/bet_minefield_grid_layout"
+        app:layout_constraintStart_toStartOf="@+id/bet_value_input" />
+
+    <GridLayout
+        android:id="@+id/bet_minefield_grid_layout"
+        android:layout_width="315sp"
+        android:layout_height="315sp"
+        android:layout_marginBottom="10dp"
+        android:alignmentMode="alignBounds"
+        android:columnCount="5"
+        android:columnOrderPreserved="false"
+        android:rowCount="5"
+        android:useDefaultMargins="true"
+        app:layout_constraintBottom_toTopOf="@+id/bet_gained_value"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/bet_minefield_button_1"
+            style="@style/minefield_button"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/bet_minefield_button_2"
+            style="@style/minefield_button"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/bet_minefield_button_3"
+            style="@style/minefield_button"
+            app:layout_column="2"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/bet_minefield_button_4"
+            style="@style/minefield_button"
+            app:layout_column="3"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/bet_minefield_button_5"
+            style="@style/minefield_button"
+            app:layout_column="4"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/bet_minefield_button_6"
+            style="@style/minefield_button"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/bet_minefield_button_7"
+            style="@style/minefield_button"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/bet_minefield_button_8"
+            style="@style/minefield_button"
+            app:layout_column="2"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/bet_minefield_button_9"
+            style="@style/minefield_button"
+            app:layout_column="3"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/bet_minefield_button_10"
+            style="@style/minefield_button"
+            app:layout_column="4"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/bet_minefield_button_11"
+            style="@style/minefield_button"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/bet_minefield_button_12"
+            style="@style/minefield_button"
+            app:layout_column="1"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/bet_minefield_button_13"
+            style="@style/minefield_button"
+            app:layout_column="2"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/bet_minefield_button_14"
+            style="@style/minefield_button"
+            app:layout_column="3"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/bet_minefield_button_15"
+            style="@style/minefield_button"
+            app:layout_column="4"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/bet_minefield_button_16"
+            style="@style/minefield_button"
+            app:layout_column="0"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/bet_minefield_button_17"
+            style="@style/minefield_button"
+            app:layout_column="1"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/bet_minefield_button_18"
+            style="@style/minefield_button"
+            app:layout_column="2"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/bet_minefield_button_19"
+            style="@style/minefield_button"
+            app:layout_column="3"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/bet_minefield_button_20"
+            style="@style/minefield_button"
+            app:layout_column="4"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/bet_minefield_button_21"
+            style="@style/minefield_button"
+            app:layout_column="0"
+            app:layout_row="4" />
+
+        <Button
+            android:id="@+id/bet_minefield_button_22"
+            style="@style/minefield_button"
+            app:layout_column="1"
+            app:layout_row="4" />
+
+        <Button
+            android:id="@+id/bet_minefield_button_23"
+            style="@style/minefield_button"
+            app:layout_column="2"
+            app:layout_row="4" />
+
+        <Button
+            android:id="@+id/bet_minefield_button_24"
+            style="@style/minefield_button"
+            app:layout_column="3"
+            app:layout_row="4" />
+
+        <Button
+            android:id="@+id/bet_minefield_button_25"
+            style="@style/minefield_button"
+            app:layout_column="4"
+            app:layout_row="4" />
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/bet_gained_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/inter"
+        android:textColor="@color/green"
+        android:text="@string/bet_value_gained_text"
+        android:visibility="invisible"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/bet_brazino_ad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/bet_positive_cash_flow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dark_green"
+        android:text="@string/bet_positive_cash_flow_text"
+        android:visibility="invisible"
+        style="@style/cash_flow_text"
+        app:layout_constraintEnd_toEndOf="@+id/bet_balance"
+        app:layout_constraintTop_toBottomOf="@+id/bet_balance" />
+
+    <TextView
+        android:id="@+id/bet_negative_cash_flow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dark_red"
+        android:text="@string/bet_negative_cash_flow_text"
+        android:visibility="invisible"
+        style="@style/cash_flow_text"
+        app:layout_constraintEnd_toEndOf="@+id/bet_balance"
+        app:layout_constraintTop_toBottomOf="@+id/bet_balance" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
