@@ -17,11 +17,16 @@
 ## Content Table
 
 - [Description](#description)
+- [Screenshots](#screenshots)
 - [Contact](#contact)
 
 ## Description
 
 EnildsBet is an Android application developed as a project for the Mobile Device Development course. It’s a simulation of a betting house, focused on the classic minesweeper game, where players place bets and try to avoid mines to earn credits.
+
+## Screenshots
+
+<img alt="Screenshots" src="public/images/readme.screenshots.png">
 
 ## Contact
 
