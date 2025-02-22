@@ -17,12 +17,17 @@
 ## Content Table
 
 - [Description](#description)
+- [Preview](#preview)
 - [Screenshots](#screenshots)
 - [Contact](#contact)
 
 ## Description
 
 EnildsBet is an Android application developed as a project for the Mobile Device Development course. It’s a simulation of a betting house, focused on the classic minesweeper game, where players place bets and try to avoid mines to earn credits.
+
+## Preview
+
+🔗 [EnildsBet - Preview]([https://victor101106.github.io/Double-Pendulum/](https://github.com/Victor101106/EnildsBet/blob/main/public/preview/preview.apk))
 
 ## Screenshots
 
