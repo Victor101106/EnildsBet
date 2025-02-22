@@ -27,7 +27,7 @@ EnildsBet is an Android application developed as a project for the Mobile Device
 
 ## Preview
 
-🔗 [EnildsBet - Preview]([https://victor101106.github.io/Double-Pendulum/](https://github.com/Victor101106/EnildsBet/blob/main/public/preview/preview.apk))
+🔗 [EnildsBet - Preview](https://github.com/Victor101106/EnildsBet/blob/main/public/preview/preview.apk)
 
 ## Screenshots
 
